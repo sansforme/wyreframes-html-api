@@ -2,7 +2,7 @@
   "name": "wyreframes-html-api",
   "type": "module",
   "dependencies": {
-    "@portabletext/to-html": "2.0.1",
+    "@portabletext/to-html": "2.0.14",
     "axios": "^1.6.0"
   }
 }
