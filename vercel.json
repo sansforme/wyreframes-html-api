@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "api/blog-html.js": {
-      "runtime": "nodejs18.x"
-    }
-  }
-}
