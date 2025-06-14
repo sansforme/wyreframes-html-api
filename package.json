@@ -2,7 +2,7 @@
   "name": "wyreframes-vercel",
   "type": "module",
   "dependencies": {
-    "@portabletext/to-html": "^4.0.0",
+    "@portabletext/to-html": "^3.0.1"
     "axios": "^1.6.0"
   }
 }
