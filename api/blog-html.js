@@ -8,10 +8,9 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Missing slug' })
   }
 
-  const query = `*[_type == "blog" && slug.current == $slug][0]{ content }`
+  const query = `*[_type == "blog" && slug.current == "${slug}"][0]{ content }`
   const encodedQuery = encodeURIComponent(query)
-
-  const url = `https://lja7795c.api.sanity.io/v2023-08-01/data/query/production?query=${encodedQuery}&$slug="${slug}"`
+  const url = `https://lja7795c.api.sanity.io/v2023-08-01/data/query/production?query=${encodedQuery}`
 
   try {
     const response = await axios.get(url)
